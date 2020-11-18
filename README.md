@@ -9,6 +9,8 @@ https://colorhunt.co/palette/220248
 
 https://coolors.co/e8e8e8-f05454-372323-262626-1a1a1a-0d0d0d
 
+https://coolors.co/e8e8e8-f05454-8b3d3d-262626-1a1a1a-0d0d0d
+
 
 Inspiration pages: 
 https://static.collectui.com/shots/3170321/future-portfolio-vibes-large
