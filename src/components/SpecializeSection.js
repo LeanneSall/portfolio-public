@@ -1,6 +1,5 @@
 import React from 'react';
 import Typist from 'react-typist'
-import HeaderFrontPage from './headerFrontPage';
 
 const SpecializeSection = () => {
 
@@ -9,17 +8,17 @@ const SpecializeSection = () => {
         <div className="specialize">
             <h2>I Specialize In: </h2>
             <Typist>
-                <ul>
+                <ul className="cards">
                     <li>Full Stack</li>
                     <li>Node</li>
                     <li>Linux</li>
                 </ul>
-                <ul>
+                <ul className="cards">
                     <li>Full Stack</li>
                     <li>Node</li>
                     <li>Linux</li>
                 </ul>
-                <ul>
+                <ul className="cards">
                     <li>Full Stack</li>
                     <li>Node</li>
                     <li>Linux</li>
