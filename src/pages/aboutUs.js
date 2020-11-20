@@ -1,12 +1,16 @@
 import React from 'react'
 import HeaderFrontPage from '../components/headerFrontPage'
 
+import SpecializeSection from '../components/SpecializeSection'
+
 const AboutUs = () => {
 
 
     return (
-        <HeaderFrontPage />
-
+        <>
+            <HeaderFrontPage />
+            <SpecializeSection />
+        </>
 
     )
 }
