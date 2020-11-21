@@ -9,22 +9,22 @@ const HeaderFrontPage = () => {
     return (
         <HelloTitle>
             <Title>
-                <div className="hide">
+                <Hide>
                     <h2>Hi there,</h2>
-                </div>
-                <div className="hide">
+                </Hide>
+                <Hide>
                     <h2>My name is <span>Leanne</span> &</h2>
-                </div>
-                <div className="hide">
+                </Hide>
+                <Hide>
                     <h2>I am a</h2>
-                </div>
-                <div className="hide">
+                </Hide>
+                <Hide>
                     <h2><span>Software Developer</span></h2>
-                </div>
+                </Hide>
             </Title>
 
             <Image>
-                <img src="" alt="animated-leanne"></img>
+                <div></div>
             </Image>
 
         </HelloTitle>
@@ -52,6 +52,19 @@ const Image = styled.div`
 flex: 1;
 
 
+    div {
+        background-color: #A8D0E6;
+        border-radius: 50%;
+        width: 25rem;
+        height: 25rem;
+        margin-left: 15rem;
+    }
+    
+
+`
+
+const Hide = styled.div`
+overflow: hidden;
 `
 
 
