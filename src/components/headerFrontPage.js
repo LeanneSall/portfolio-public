@@ -1,4 +1,5 @@
 import React from 'react'
+import { HelloTitle, Title, Hide, Image } from '../Styles/AboutStyles'
 
 import styled from 'styled-components';
 
@@ -33,39 +34,7 @@ const HeaderFrontPage = () => {
     )
 }
 
-const HelloTitle = styled.div`
-    min-height: 90vh;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 5rem 10rem;
-    
-`
 
-const Title = styled.div`
-flex: 1;
-padding-right: 5rem;
-font-weight: lighter;
-
-`
-const Image = styled.div`
-flex: 1;
-
-
-    div {
-        background-color: #A8D0E6;
-        border-radius: 50%;
-        width: 25rem;
-        height: 25rem;
-        margin-left: 15rem;
-    }
-    
-
-`
-
-const Hide = styled.div`
-overflow: hidden;
-`
 
 
 

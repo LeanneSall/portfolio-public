@@ -25,6 +25,9 @@ h3 {
     color: white;
 }
 
+h4 {
+    font-size: 2rem;
+}
 span {
     font-weight: bold;
     color: #F76C6C;

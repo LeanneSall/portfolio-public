@@ -1,32 +1,62 @@
 import React from 'react';
 import Typist from 'react-typist'
+import styled from 'styled-components'
+import { Card } from '../Styles/AboutStyles'
+
 
 const SpecializeSection = () => {
 
 
     return (
-        <div className="specialize">
-            <h2>I Specialize In: </h2>
-            <Typist>
-                <ul className="cards">
+
+        // <h2>I Specialize In: </h2>
+
+        <Card>
+            <h2>I Specialize in: </h2>
+            <ul>
+                <Typist cursor={{ show: false }}>
                     <li>Full Stack</li>
                     <li>Node</li>
                     <li>Linux</li>
-                </ul>
-                <ul className="cards">
                     <li>Full Stack</li>
                     <li>Node</li>
                     <li>Linux</li>
-                </ul>
-                <ul className="cards">
+                </Typist>
+            </ul>
+
+            <ul>
+                <Typist cursor={{ show: false }} >
+                    <Typist.Delay ms={3000} />
                     <li>Full Stack</li>
                     <li>Node</li>
                     <li>Linux</li>
-                </ul>
-            </Typist>
-        </div>
+                    <li>Full Stack</li>
+                    <li>Node</li>
+                    <li>Linux</li>
+                </Typist>
+            </ul>
+            <ul>
+                <Typist cursor={{ show: false }} >
+                    <Typist.Delay ms={6000} />
+                    <li>Full Stack</li>
+                    <li>Node</li>
+                    <li>Linux</li>
+                    <li>Full Stack</li>
+                    <li>Node</li>
+                    <li>Linux</li>
+                </Typist>
+            </ul>
+
+        </Card>
+
 
     )
 }
+
+
+
+
+
+
 
 export default SpecializeSection;

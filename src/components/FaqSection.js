@@ -1,41 +1,47 @@
 import React from 'react';
+import { FAQ, Question, Answer } from '../Styles/AboutStyles'
 
 const FaqSection = () => {
 
     return (
-        <div className="faq">
+        <FAQ>
             <h2>FAQ:</h2>
-            <div className="question">
+            <Question>
                 <h4>Why Hire Me?</h4>
-                <div className="answer">
+                <Answer>
+                    <div className="faq-line"></div>
                     <p>Cause I am the bomb diggity</p>
-                </div>
-            </div>
-            <div className="question">
+                </Answer>
+            </Question>
+            <Question>
                 <h4>Why Hire Me?</h4>
-                <div className="answer">
+                <Answer>
+                    <div className="faq-line"></div>
                     <p>Cause I am the bomb diggity</p>
-                </div>
-            </div>
-            <div className="question">
+                </Answer>
+            </Question>
+            <Question>
                 <h4>Why Hire Me?</h4>
-                <div className="answer">
+                <Answer>
+                    <div className="faq-line"></div>
                     <p>Cause I am the bomb diggity</p>
-                </div>
-            </div>
-            <div className="question">
+                </Answer>
+            </Question>
+            <Question>
                 <h4>Why Hire Me?</h4>
-                <div className="answer">
+                <Answer>
+                    <div className="faq-line"></div>
                     <p>Cause I am the bomb diggity</p>
-                </div>
-            </div>
-            <div className="question">
+                </Answer>
+            </Question>
+            <Question>
                 <h4>Why Hire Me?</h4>
-                <div className="answer">
+                <Answer>
+                    <div className="faq-line"></div>
                     <p>Cause I am the bomb diggity</p>
-                </div>
-            </div>
-        </div>
+                </Answer>
+            </Question>
+        </FAQ>
     )
 }
 
