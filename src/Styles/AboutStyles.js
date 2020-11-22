@@ -6,7 +6,7 @@ import styled from 'styled-components'
 //Hello Section
 
 export const HelloTitle = styled.div`
-    min-height: 90vh;
+    min-height: 80vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -47,9 +47,11 @@ export const Card = styled.div`
     justify-content: space-around;
     height: 35vh;
     align-items: center;
-    padding-left: 2rem;
+    padding-left: 5rem;
     background-color: #374785;
-    margin: 5rem;
+    margin-top: 10rem;
+   margin-left: 5rem;
+   margin-right: 5rem;
     flex-wrap: wrap;
     
     
