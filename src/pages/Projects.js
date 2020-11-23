@@ -78,13 +78,13 @@ const Hide = styled.div`
 overflow: hidden;
 
 `
-export const Frame1 = styled(motion.div)`
+const Frame1 = styled(motion.div)`
 position: fixed;
 left: 0;
 top: 10%;
 width: 100%;
 height: 100vh;
-background: #F8E9A1;
+background: #24305E;
 z-index: 2;
 `
 

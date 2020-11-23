@@ -60,11 +60,11 @@ background-color: ' #374785'
 
 const Cards = styled(motion.div)`
 display: flex;
-justify-content: space-around;
+justify-content: space-between;
 align-items: center;
 flex-direction: row;
 flex-wrap: wrap;
-margin: 0rem 10rem;
+margin: 5rem 10rem;
 margin-top: 5rem;
 
 
@@ -75,9 +75,9 @@ const Card = styled.div`
     height: 600px;
     background-color: #A8D0E6;
     margin-bottom: 5rem;
-    box-shadow: 5px 10px black;
+    box-shadow: 5px 10px blueviolet;
     border-radius: 10%;
-    padding: 3rem;
+    padding: 2em;
     text-align: center;
     
     

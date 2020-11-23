@@ -68,12 +68,12 @@ export const projectLine = {
 
 
 export const pageTrans = {
-    hidden: { x: '-130%', skew: '45deg' },
+    hidden: { x: '-360%', skew: '-45deg' },
     show: {
         x: '100%',
         skew: '0deg',
         transition: {
-            ease: 'easeOut', duration: 1.5
+            ease: 'easeOut', duration: 1
         }
     }
 
