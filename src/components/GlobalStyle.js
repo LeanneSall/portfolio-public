@@ -1,6 +1,7 @@
 import { createGlobalStyle } from 'styled-components';
 import 'fontsource-sanchez'
 
+
 const GlobalStyle = createGlobalStyle`
 
 * {
@@ -10,7 +11,7 @@ const GlobalStyle = createGlobalStyle`
 }
 
 body {
-    background-color: #24305E;
+    
     color: white;
     font-family: "Sanchez";
     

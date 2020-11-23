@@ -18,18 +18,20 @@ export const Title = styled.div`
 flex: 1;
 padding-right: 5rem;
 font-weight: lighter;
+z-index: 2;
 
 `
 export const Image = styled.div`
 flex: 1;
+z-index: 2;
 
-
-    div {
+    img {
         background-color: #A8D0E6;
         border-radius: 50%;
         width: 25rem;
         height: 25rem;
         margin-left: 15rem;
+        
     }
     
 

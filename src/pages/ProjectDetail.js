@@ -3,6 +3,10 @@ import styled from 'styled-components'
 import { useHistory } from 'react-router-dom'
 import { ProjectState } from '../ProjectState'
 
+//Animation
+import { motion } from 'framer-motion'
+import { pageAnimation } from '../animation'
+
 
 const ProjectDetail = () => {
     const history = useHistory();
@@ -18,7 +22,7 @@ const ProjectDetail = () => {
     return (
         <>
             {project && (
-                <Details>
+                <Details variants={pageAnimation} exit="exit" initial='hidden' animate='show'>
                     <Header>
                         <h2>{project.title}</h2>
                         <img src={project.mainImg} alt="hello"></img>
@@ -36,7 +40,7 @@ const ProjectDetail = () => {
 }
 
 
-const Details = styled.div`
+const Details = styled(motion.div)`
 
 
 `

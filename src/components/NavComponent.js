@@ -21,13 +21,14 @@ const Nav = () => {
     )
 }
 
-const NavStyles = styled.div`
+export let NavStyles = styled.div`
 min-height: 10vh;
 display: flex;
 margin: auto;
 justify-content: space-between;
 align-items: center;
 padding: 1rem 10rem;
+
 
 a {
     color: white;

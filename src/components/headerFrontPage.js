@@ -1,42 +1,40 @@
 import React from 'react'
 import { HelloTitle, Title, Hide, Image } from '../Styles/AboutStyles'
 import { motion, MotionConfig } from 'framer-motion'
+import { titleAnim, imgAnim } from '../animation'
+import Line from './Line'
 
 
 const HeaderFrontPage = () => {
 
-    const titleAnimation = {
-        hidden: { opacity: 0 },
-        show: { opacity: 1, transition: { duration: 2 } }
-    }
-
-    const containerTitle = {
-        hidden: { x: 100 },
-        show: { x: 0, transition: { duration: 1, ease: 'easeOut' } }
-    }
-
     return (
         <HelloTitle>
-            <motion.div variants={containerTitle} initial='hidden' animate='show'>
+            <motion.div >
                 <Title>
                     <Hide>
-                        <motion.h2 variants={titleAnimation}>Hi there,</motion.h2>
+                        <motion.h2 variants={titleAnim}>Hi there,</motion.h2>
                     </Hide>
                     <Hide>
-                        <motion.h2 variants={titleAnimation}>My name is <span>Leanne</span> &</motion.h2>
+                        <motion.h2 variants={titleAnim}>My name is <span>Leanne</span> &</motion.h2>
                     </Hide>
                     <Hide>
-                        <motion.h2 variants={titleAnimation}>I am a</motion.h2>
+                        <motion.h2 variants={titleAnim}>I am a</motion.h2>
                     </Hide>
                     <Hide>
-                        <motion.h2 variants={titleAnimation}><span>Software Developer</span></motion.h2>
+                        <motion.h2 variants={titleAnim}><span>Software Developer</span></motion.h2>
+
                     </Hide>
+
                 </Title>
+
             </motion.div>
 
             <Image>
-                <div></div>
+                <motion.img variants={imgAnim} src="http://via.placeholder.com/640x360
+"></motion.img>
             </Image>
+
+            <Line />
 
         </HelloTitle>
 
