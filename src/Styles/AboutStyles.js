@@ -11,14 +11,17 @@ export const HelloTitle = styled.div`
     align-items: center;
     justify-content: space-between;
     padding: 5rem 10rem;
+   
     
 `
 
 export const Title = styled.div`
 flex: 1;
 padding-right: 5rem;
-font-weight: lighter;
+
 z-index: 2;
+
+   
 
 `
 export const Image = styled.div`
