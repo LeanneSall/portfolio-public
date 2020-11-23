@@ -12,6 +12,7 @@ const SpecializeSection = () => {
         // <h2>I Specialize In: </h2>
 
         <Card>
+
             <h2>I Specialize in: </h2>
             <ul>
                 <Typist cursor={{ show: false }}>

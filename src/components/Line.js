@@ -20,6 +20,7 @@ const LineSvg = styled.svg`
     position: absolute;
     left: 0;
     z-index: 1;
+    
 
 `
 

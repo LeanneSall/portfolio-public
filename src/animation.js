@@ -1,7 +1,7 @@
 export const pageAnimation = {
     hidden: {
         opacity: 0,
-        y: -200,
+
 
     },
     show: {
@@ -30,6 +30,14 @@ export const titleAnim = {
     },
 };
 
+export const fade = {
+    hidden: { opacity: 0 },
+    show: {
+        opacity: 1,
+        transition: { ease: "easeOut", duration: 0.75 },
+    },
+};
+
 
 export const imgAnim = {
     hidden: {
@@ -42,3 +50,34 @@ export const imgAnim = {
 
     },
 }
+
+
+export const projectLine = {
+
+    hidden: { width: '0%' },
+
+    show: {
+        width: '100%',
+        transition: { duration: 0.95 }
+    }
+
+
+
+
+}
+
+
+export const pageTrans = {
+    hidden: { x: '-130%', skew: '45deg' },
+    show: {
+        x: '100%',
+        skew: '0deg',
+        transition: {
+            ease: 'easeOut', duration: 1.5
+        }
+    }
+
+
+}
+
+

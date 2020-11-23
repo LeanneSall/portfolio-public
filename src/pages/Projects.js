@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 
 import { motion } from 'framer-motion'
-import { pageAnimation, navAnim } from '../animation'
+import { pageAnimation, imgAnim, fade, projectLine, pageTrans } from '../animation'
 import Nav from '../components/NavComponent'
 
 const Projects = () => {
@@ -12,29 +12,34 @@ const Projects = () => {
     return (
         <motion.div style={{ background: '#7accbe' }} variants={pageAnimation} exit="exit" initial='hidden' animate='show' >
             <Nav />
+            <Frame1 variants={pageTrans}></Frame1>
             <Project>
-
                 <SepProjects>
-                    <h2>Trump The Scandles</h2>
-                    <div className="line"></div>
+                    <motion.h2 variants={fade}>Trump The Scandles</motion.h2>
+                    <motion.div variants={projectLine} className="line"></motion.div>
                     <Link to='/projects/TTS'>
-                        <img src='http://via.placeholder.com/640x360' alt="hellolthere"></img>
+                        <Hide>
+                            <motion.img variants={imgAnim} src='http://via.placeholder.com/640x360' alt="hellolthere"></motion.img></Hide>
                     </Link>
                 </SepProjects>
                 <SepProjects>
-                    <h2>Amazombie</h2>
-                    <div className="line"></div>
+                    <motion.h2 variants={fade}>Amazombie</motion.h2>
+                    <motion.div variants={projectLine} className="line"></motion.div>
                     <Link to='/projects/amazombie'>
-                        <img src='http://via.placeholder.com/640x360' alt="hellolthere"></img>
+                        <Hide>
+                            <motion.img variants={imgAnim} src='http://via.placeholder.com/640x360' alt="hellolthere"></motion.img></Hide>
                     </Link>
                 </SepProjects>
                 <SepProjects>
-                    <h2>MockBuster</h2>
-                    <div className="line"></div>
-                    <Link to='/projects/mockbuster'>
-                        <img src='http://via.placeholder.com/640x360' alt="hellolthere"></img>
+                    <motion.h2 variants={fade}>MockBuster</motion.h2>
+                    <motion.div variants={projectLine} className="line"></motion.div>
+                    <Link to='/projects/mockBuster'>
+                        <Hide>
+                            <motion.img variants={imgAnim} src='http://via.placeholder.com/640x360' alt="hellolthere"></motion.img>
+                        </Hide>
                     </Link>
                 </SepProjects>
+
 
             </Project>
         </motion.div>
@@ -57,7 +62,7 @@ padding-bottom: 10rem;
 
 .line {
     height: 0.5rem;
-    background: #cccccc;
+    background: #F76C6C ;
     margin-bottom: 3rem;
 }
 
@@ -68,5 +73,22 @@ img {
 }
 
 `
+
+const Hide = styled.div`
+overflow: hidden;
+
+`
+export const Frame1 = styled(motion.div)`
+position: fixed;
+left: 0;
+top: 10%;
+width: 100%;
+height: 100vh;
+background: #F8E9A1;
+z-index: 2;
+`
+
+
+
 
 export default Projects

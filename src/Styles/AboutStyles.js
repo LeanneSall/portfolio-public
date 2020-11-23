@@ -6,11 +6,12 @@ import styled from 'styled-components'
 //Hello Section
 
 export const HelloTitle = styled.div`
-    min-height: 80vh;
+    min-height: 90vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 5rem 10rem;
+    padding-bottom: 15rem;
    
     
 `
@@ -45,28 +46,27 @@ overflow: hidden;
 `
 
 
-//Specialize Section
 
 export const Card = styled.div`
     display: flex;
     justify-content: space-around;
-    height: 35vh;
+    height: 45vh;
     align-items: center;
     padding-left: 5rem;
-    background-color: #374785;
-    margin-top: 10rem;
+
+    margin-top: 2rem;
    margin-left: 5rem;
    margin-right: 5rem;
     flex-wrap: wrap;
-    
-    
+
+
 
 
    h2 {
 
          padding-right: 2rem;
-         
-         
+
+
 
    }
 
@@ -74,14 +74,14 @@ export const Card = styled.div`
                     flex: 1;
        padding-top: 5rem;
        padding-left: 5rem;
-      
+
    }
 
    li {
                     font-size: 1.8em;
    }
 
-    
+
     `
 
 //FAQ Section 
@@ -105,26 +105,26 @@ min-height: 90vh;
         width: 100%;
     }
 
-    
 
-   
-`
 
-export const Answer = styled.div`
-
-        padding: 2rem 0rem;
-        p {
-            padding: 1rem 0rem;
-        }
-    
 
 `
 
+// export const Answer = styled.div`
 
-export const Question = styled.div`
+//         padding: 2rem 0rem;
+//         p {
+//             padding: 1rem 0rem;
+//         }
 
-padding: 3rem 0rem;
-        cursor: pointer;
-    
 
-`
+// `
+
+
+// export const Question = styled.div`
+
+// padding: 3rem 0rem;
+//         cursor: pointer;
+
+
+// `
