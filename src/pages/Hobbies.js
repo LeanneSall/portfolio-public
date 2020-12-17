@@ -72,11 +72,12 @@ margin-top: 5rem;
 `
 const Card = styled.div`
     width: 500px;
-    height: 600px;
+    height: 500px;
+    
     background-color: #A8D0E6;
     margin-bottom: 5rem;
     box-shadow: 5px 10px blueviolet;
-    border-radius: 10%;
+    border-radius: 50%;
     padding: 2em;
     text-align: center;
     

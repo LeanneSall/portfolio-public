@@ -3,6 +3,8 @@ import { HelloTitle, Title, Hide, Image } from '../Styles/AboutStyles'
 import { motion, MotionConfig } from 'framer-motion'
 import { titleAnim, imgAnim } from '../animation'
 import Line from './Line'
+import Leanne from '../img/Leanne.png'
+
 
 
 const HeaderFrontPage = () => {
@@ -10,6 +12,7 @@ const HeaderFrontPage = () => {
     return (
         <HelloTitle>
             <motion.div >
+
                 <Title>
                     <Hide>
                         <motion.h2 variants={titleAnim}>Hi there,</motion.h2>
@@ -30,11 +33,11 @@ const HeaderFrontPage = () => {
             </motion.div>
 
             <Image>
-                <motion.img variants={imgAnim} src="http://via.placeholder.com/640x360
-"></motion.img>
+                <motion.img variants={imgAnim} src={Leanne} alt="Leanne's photo"></motion.img>
             </Image>
 
             <Line />
+
 
         </HelloTitle>
 

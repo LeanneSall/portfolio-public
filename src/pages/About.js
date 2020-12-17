@@ -22,6 +22,7 @@ const AboutUs = () => {
             <About >
                 <HeaderFrontPage />
                 {/* <SpecializeSection /> */}
+
             </About>
         </motion.div >
 

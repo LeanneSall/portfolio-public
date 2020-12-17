@@ -10,7 +10,7 @@ const Contact = () => {
 
 
     return (
-        <Cont style={{ background: "#A8D0E6" }} variants={pageAnimation} exit="exit" initial='hidden' animate='show'>
+        <Cont style={{ background: "#81c2e6" }} variants={pageAnimation} exit="exit" initial='hidden' animate='show'>
             <Nav />
             <Container>
                 <Items>

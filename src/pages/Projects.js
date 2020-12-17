@@ -12,7 +12,6 @@ const Projects = () => {
     return (
         <motion.div style={{ background: '#7accbe' }} variants={pageAnimation} exit="exit" initial='hidden' animate='show' >
             <Nav />
-            <Frame1 variants={pageTrans}></Frame1>
             <Project>
                 <SepProjects>
                     <motion.h2 variants={fade}>Trump The Scandles</motion.h2>
@@ -68,7 +67,7 @@ padding-bottom: 10rem;
 
 img {
     width: 100%;
-    height: 70vh;
+    height: 50vh;
     object-fit: cover;
 }
 

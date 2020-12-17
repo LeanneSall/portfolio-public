@@ -30,11 +30,11 @@ flex: 1;
 z-index: 2;
 
     img {
-        background-color: #A8D0E6;
+        background-color: #81c2e6;
         border-radius: 50%;
-        width: 25rem;
-        height: 25rem;
-        margin-left: 15rem;
+        width: 35rem;
+        height: 35rem;
+        margin-left: 5rem;
         
     }
     
