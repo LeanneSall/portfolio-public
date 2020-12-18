@@ -5,7 +5,6 @@ import Nav from './components/NavComponent'
 //Pages
 import Home from './pages/Home'
 import Contact from './pages/Contact'
-import Hobbies from './pages/Hobbies'
 import Projects from './pages/Projects'
 import ProjectDetail from './pages/ProjectDetail'
 //Router
@@ -37,9 +36,6 @@ function App() {
           </Route>
           <Route path='/projects/:id'>
             <ProjectDetail />
-          </Route>
-          <Route path='/hobbies'>
-            <Hobbies />
           </Route>
           <Route path='/contact'>
             <Contact />

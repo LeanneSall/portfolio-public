@@ -2,6 +2,9 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import Toggle from './Toggle'
 import { AnimateSharedLayout } from 'framer-motion'
+import { motion } from 'framer-motion'
+import { fade, titleAnim } from '../animation';
+
 
 const FaqSection = () => {
 
@@ -9,8 +12,9 @@ const FaqSection = () => {
 
 
     return (
-        <FAQ>
-            <h2>FAQ:</h2>
+        <FAQ variants={fade}>
+            <motion.h2>Want to know more?</motion.h2>
+            <motion.h3>Here are some frequently asked questions:</motion.h3>
             <AnimateSharedLayout>
                 <Toggle title='Why Hire Me?'>
                     <div className="answer">
@@ -24,7 +28,7 @@ const FaqSection = () => {
                     </div>
 
                 </Toggle>
-                <Toggle title='Why Hire Me?'>
+                <Toggle title='What do you do in your spare time?'>
                     <div className="answer">
                         <p>Cause I am the bomb diggity</p>
                     </div>
@@ -47,14 +51,22 @@ const FaqSection = () => {
     )
 }
 
-const FAQ = styled.div`
-min-height: 90vh;
+const FAQ = styled(motion.div)`
+min-height: 70vh;
     display: block;
     align-items: center;
     justify-content: space-between;
     padding: 5rem 10rem;
+    margin-top: 8rem;
     h2 {
         padding-bottom: 2rem;
+        font-weight: lighter;
+    }
+
+    h3 {
+        padding-top: 1rem;
+        padding-bottom: 3rem;
+        font-size: 2rem;
         font-weight: lighter;
     }
 

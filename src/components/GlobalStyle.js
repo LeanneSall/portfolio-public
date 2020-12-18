@@ -14,6 +14,7 @@ body {
     
     color: white;
     font-family: "Sanchez";
+    overflow-x: hidden;
     
 }
 

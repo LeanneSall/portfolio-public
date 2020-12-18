@@ -20,6 +20,7 @@ min-height: 90vh;
     justify-content: flex-start;
     padding: 5rem 10rem;
     padding-bottom: 15rem;
+    flex-wrap: wrap;
 
 `
 
