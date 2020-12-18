@@ -1,7 +1,7 @@
 import React from 'react';
 import Typist from 'react-typist'
 import styled from 'styled-components'
-import { Card } from '../Styles/AboutStyles'
+import { Card } from '../Styles/HomeStyles'
 
 
 const SpecializeSection = () => {

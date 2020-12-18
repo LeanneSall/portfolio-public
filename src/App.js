@@ -3,7 +3,7 @@ import GlobalStyle from './components/GlobalStyle'
 import Nav from './components/NavComponent'
 
 //Pages
-import AboutUs from './pages/About'
+import Home from './pages/Home'
 import Contact from './pages/Contact'
 import Hobbies from './pages/Hobbies'
 import Projects from './pages/Projects'
@@ -13,6 +13,7 @@ import { Switch, Route, useLocation } from 'react-router-dom'
 
 //Animation
 import { AnimatePresence } from "framer-motion"
+import About from './pages/About'
 
 function App() {
   const location = useLocation();
@@ -26,7 +27,10 @@ function App() {
       <AnimatePresence exitBeforeEnter>
         <Switch location={location} key={location.pathname}>
           <Route path='/' exact>
-            <AboutUs />
+            <Home />
+          </Route>
+          <Route path='/about' exact>
+            <About />
           </Route>
           <Route path='/projects' exact>
             <Projects />

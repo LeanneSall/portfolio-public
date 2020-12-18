@@ -1,14 +1,13 @@
 import React from 'react'
-import FaqSection from '../components/FaqSection'
-import SpecializeSection from '../components/SpecializeSection'
+import HeaderFrontPage from '../components/headerFrontPage'
 import styled from 'styled-components'
 import Nav from '../components/NavComponent'
 //Animation
 import { motion } from 'framer-motion'
-import { titleAnim, pageAnimation, pageTrans } from '../animation'
+import { pageAnimation } from '../animation'
 
 
-const About = () => {
+const Home = () => {
 
 
     return (
@@ -18,11 +17,9 @@ const About = () => {
         }} variants={pageAnimation} exit="exit" initial="hidden" animate='show'>
             <Nav />
 
-            <AboutUs >
-
-                <SpecializeSection />
-                <FaqSection />
-            </AboutUs>
+            <HomePage >
+                <HeaderFrontPage />
+            </HomePage>
         </motion.div >
 
 
@@ -32,11 +29,11 @@ const About = () => {
 
 
 
-const AboutUs = styled(motion.div)`
+const HomePage = styled(motion.div)`
 background-color: #24305E;
 
 
 `
 
 
-export default About
+export default Home

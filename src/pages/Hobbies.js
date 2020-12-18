@@ -14,39 +14,45 @@ const Hobbies = () => {
             <Hob >
                 <Nav />
                 <Cards>
-                    <Card>
-                        <h4>3D Printing</h4>
-                        <img src="" alt="blah"></img>
-                        <p>This is my hobby and I like it sometimes</p>
-                    </Card>
-                    <Card>
-                        <h4>Guitar</h4>
-                    </Card>
-                    <Card>
-                        <h4>Piano</h4>
-                    </Card>
-                    <Card>
-                        <h4>Music Production</h4>
-                    </Card>
-                    <Card>
-                        <h4>Airbrushing</h4>
-                    </Card>
-                    <Card>
-                        <h4>Motorcycles</h4>
-                    </Card>
-                    <Card>
-                        <h4>Classic Cars</h4>
-                    </Card>
-                    <Card>
-                        <h4>Welding</h4>
-                    </Card>
-                    <Card>
-                        <h4>3D Modelling</h4>
-                    </Card>
+                    <motion.div drag
+                        dragConstraints={{
+                            height: 100,
+                            width: 100
+                        }}>
 
+                        <Card>
+                            <h4>3D Printing</h4>
+                            <img src="" alt="blah"></img>
+                            <p>This is my hobby and I like it sometimes</p>
+                        </Card>
+                        <Card>
+                            <h4>Guitar</h4>
+                        </Card>
+                        <Card>
+                            <h4>Piano</h4>
+                        </Card>
+                        <Card>
+                            <h4>Music Production</h4>
+                        </Card>
+                        <Card>
+                            <h4>Airbrushing</h4>
+                        </Card>
+                        <Card>
+                            <h4>Motorcycles</h4>
+                        </Card>
+                        <Card>
+                            <h4>Classic Cars</h4>
+                        </Card>
+                        <Card>
+                            <h4>Welding</h4>
+                        </Card>
+                        <Card>
+                            <h4>3D Modelling</h4>
+                        </Card>
+                    </motion.div>
                 </Cards>
-            </Hob>
-        </motion.div>
+            </Hob >
+        </motion.div >
     )
 }
 
@@ -66,6 +72,7 @@ flex-direction: row;
 flex-wrap: wrap;
 margin: 5rem 10rem;
 margin-top: 5rem;
+
 
 
 
