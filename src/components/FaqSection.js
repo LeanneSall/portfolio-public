@@ -18,34 +18,23 @@ const FaqSection = () => {
             <AnimateSharedLayout>
                 <Toggle title='Why Hire Me?'>
                     <div className="answer">
-                        <p>Cause I am the bomb diggity</p>
+                        <p>Cause I am nice and stuff I think sometimes</p>
                     </div>
 
                 </Toggle>
                 <Toggle title='What do you specialize in?'>
                     <div className="answer">
-                        <p>Cause I am the bomb diggity</p>
+                        <p>I specialize in full stack javascript with React</p>
                     </div>
 
                 </Toggle>
                 <Toggle title='What do you do in your spare time?'>
                     <div className="answer">
-                        <p>Cause I am the bomb diggity</p>
+                        <p>A lot of things</p>
                     </div>
 
                 </Toggle>
-                <Toggle title='Why Hire Me?'>
-                    <div className="answer">
-                        <p>Cause I am the bomb diggity</p>
-                    </div>
 
-                </Toggle>
-                <Toggle title='Why Hire Me?'>
-                    <div className="answer">
-                        <p>Cause I am the bomb diggity</p>
-                    </div>
-
-                </Toggle>
             </AnimateSharedLayout>
         </FAQ>
     )
