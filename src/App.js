@@ -6,7 +6,7 @@ import GlobalStyle from './components/GlobalStyle'
 import Home from './pages/Home'
 import Contact from './pages/Contact'
 import Projects from './pages/Projects'
-import ProjectDetail from './pages/ProjectDetail'
+
 //Router
 import { Switch, Route, useLocation } from 'react-router-dom'
 
@@ -33,9 +33,6 @@ function App() {
           </Route>
           <Route path='/projects' exact>
             <Projects />
-          </Route>
-          <Route path='/projects/:id'>
-            <ProjectDetail />
           </Route>
           <Route path='/contact'>
             <Contact />
