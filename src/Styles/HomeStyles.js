@@ -54,42 +54,7 @@ overflow: hidden;
 
 
 
-export const Card = styled.div`
-    display: flex;
-    justify-content: space-around;
-    height: 45vh;
-    align-items: center;
-    padding-left: 5rem;
 
-    margin-top: 2rem;
-   margin-left: 5rem;
-   margin-right: 5rem;
-    flex-wrap: wrap;
-
-
-
-
-   h2 {
-
-         padding-right: 2rem;
-
-
-
-   }
-
-   ul {
-                    flex: 1;
-       padding-top: 5rem;
-       padding-left: 5rem;
-
-   }
-
-   li {
-                    font-size: 1.8em;
-   }
-
-
-    `
 
 //FAQ Section 
 

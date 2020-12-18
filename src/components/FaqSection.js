@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import Toggle from './Toggle'
+import { AnimateSharedLayout } from 'framer-motion'
 
 const FaqSection = () => {
 
@@ -10,39 +11,38 @@ const FaqSection = () => {
     return (
         <FAQ>
             <h2>FAQ:</h2>
-            <Toggle>
-                <div className="question">
-                    <h4>Why Hire Me?</h4>
+            <AnimateSharedLayout>
+                <Toggle title='Why Hire Me?'>
                     <div className="answer">
                         <p>Cause I am the bomb diggity</p>
                     </div>
-                </div>
-            </Toggle>
-            <div className="question">
-                <h4>Why Hire Me?</h4>
-                <div className="answer">
-                    <p>Cause I am the bomb diggity</p>
 
-                </div>
-            </div>
-            <div className="question">
-                <h4>Why Hire Me?</h4>
-                <div className="answer">
-                    <p>Cause I am the bomb diggity</p>
-                </div>
-            </div>
-            <div className="question">
-                <h4>Why Hire Me?</h4>
-                <div className="answer">
-                    <p>Cause I am the bomb diggity</p>
-                </div>
-            </div>
-            <div className="question">
-                <h4>Why Hire Me?</h4>
-                <div className="answer">
-                    <p>Cause I am the bomb diggity</p>
-                </div>
-            </div>
+                </Toggle>
+                <Toggle title='What do you specialize in?'>
+                    <div className="answer">
+                        <p>Cause I am the bomb diggity</p>
+                    </div>
+
+                </Toggle>
+                <Toggle title='Why Hire Me?'>
+                    <div className="answer">
+                        <p>Cause I am the bomb diggity</p>
+                    </div>
+
+                </Toggle>
+                <Toggle title='Why Hire Me?'>
+                    <div className="answer">
+                        <p>Cause I am the bomb diggity</p>
+                    </div>
+
+                </Toggle>
+                <Toggle title='Why Hire Me?'>
+                    <div className="answer">
+                        <p>Cause I am the bomb diggity</p>
+                    </div>
+
+                </Toggle>
+            </AnimateSharedLayout>
         </FAQ>
     )
 }
@@ -58,13 +58,22 @@ min-height: 90vh;
         font-weight: lighter;
     }
 
-    .faq-line {
+    .faqline {
         background: #cccccc;
         height: 0.2rem;
         margin: 2rem 0rem;
         width: 100%;
     }
-
+    .question {
+    padding: 3rem 0rem;
+    cursor: pointer;
+    }
+  .answer {
+    padding: 2rem 0rem;
+    p {
+      padding: 1rem 0rem;
+    }
+  }
 
 
 
