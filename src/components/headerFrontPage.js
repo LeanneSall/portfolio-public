@@ -1,6 +1,6 @@
 import React from 'react'
 import { HelloTitle, Title, Hide, Image, Wrapper } from '../Styles/HomeStyles'
-import { motion, MotionConfig } from 'framer-motion'
+import { motion } from 'framer-motion'
 import { titleAnim, imgAnim } from '../animation'
 import Line from './Line'
 import Leanne from '../img/Leanne.png'

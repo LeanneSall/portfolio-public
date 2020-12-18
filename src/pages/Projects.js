@@ -1,11 +1,10 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Link } from 'react-router-dom'
+
 
 import { AnimateSharedLayout, motion } from 'framer-motion'
-import { pageAnimation, imgAnim, fade, projectLine, pageTrans } from '../animation'
+import { pageAnimation } from '../animation'
 import Nav from '../components/NavComponent'
-import Toggle from '../components/Toggle'
 import ToggleProject from '../components/ToggleProject'
 import trumpgame from '../img/trumpgame.png'
 import Skihist from '../img/Skihist.png'

@@ -5,7 +5,7 @@ import styled from 'styled-components'
 import Nav from '../components/NavComponent'
 //Animation
 import { motion } from 'framer-motion'
-import { titleAnim, pageAnimation, pageTrans } from '../animation'
+import { pageAnimation } from '../animation'
 
 
 const About = () => {

@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import Toggle from './Toggle'
 import { AnimateSharedLayout } from 'framer-motion'
 import { motion } from 'framer-motion'
-import { fade, titleAnim } from '../animation';
+import { fade } from '../animation';
 
 
 const FaqSection = () => {
