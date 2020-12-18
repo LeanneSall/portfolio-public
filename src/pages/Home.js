@@ -13,7 +13,7 @@ const Home = () => {
     return (
 
         <motion.div style={{
-            background: '#24305E'
+            background: '#1A1A1A'
         }} variants={pageAnimation} exit="exit" initial="hidden" animate='show'>
             <Nav />
 
@@ -30,7 +30,7 @@ const Home = () => {
 
 
 const HomePage = styled(motion.div)`
-background-color: #24305E;
+background-color: #1A1A1A;
 
 
 `

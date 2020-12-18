@@ -14,7 +14,7 @@ const About = () => {
     return (
 
         <motion.div style={{
-            background: '#24305E'
+            background: '#2F2525'
         }} variants={pageAnimation} exit="exit" initial="hidden" animate='show'>
             <Nav />
 
@@ -33,7 +33,7 @@ const About = () => {
 
 
 const AboutUs = styled(motion.div)`
-background-color: #24305E;
+background-color: #2F2525;
 
 
 `

@@ -37,7 +37,7 @@ export const Image = styled.div`
 z-index: 2;
     img {
         flex: 1;
-        background-color: #81c2e6;
+        background-color:  #943C3C;
         border-radius: 50%;
         width: 40rem;
         height: 40rem;

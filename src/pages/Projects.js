@@ -2,45 +2,53 @@ import React from 'react'
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 
-import { motion } from 'framer-motion'
+import { AnimateSharedLayout, motion } from 'framer-motion'
 import { pageAnimation, imgAnim, fade, projectLine, pageTrans } from '../animation'
 import Nav from '../components/NavComponent'
 import Toggle from '../components/Toggle'
+import ToggleProject from '../components/ToggleProject'
+import trumpgame from '../img/trumpgame.png'
+import Skihist from '../img/Skihist.png'
+import amazombie from '../img/amazombie.png'
 
 const Projects = () => {
 
 
     return (
-        <motion.div style={{ background: '#7accbe' }} variants={pageAnimation} exit="exit" initial='hidden' animate='show' >
+        <motion.div style={{ background: '#262626' }} variants={pageAnimation} exit="exit" initial='hidden' animate='show' >
             <Nav />
             <Project>
+                <AnimateSharedLayout>
+                    <ToggleProject title="SkiHist Music App" img={Skihist}>
+                        <SepProjects>
+                            <motion.h3>Music app made for Artist Skihist and the new Album</motion.h3>
+                            <ul>
+                                <li>Javascript</li>
+                                <li>Sass</li>
+                            </ul>
 
-                <SepProjects>
-                    <motion.h2 variants={fade}>Trump The Scandles</motion.h2>
-                    <motion.div variants={projectLine} className="line"></motion.div>
-                    <Link to='/projects/TTS'>
-                        <Hide>
-                            <motion.img variants={imgAnim} src='http://via.placeholder.com/640x360' alt="hellolthere"></motion.img></Hide>
-                    </Link>
-                </SepProjects>
-                <SepProjects>
-                    <motion.h2 variants={fade}>Amazombie</motion.h2>
-                    <motion.div variants={projectLine} className="line"></motion.div>
-                    <Link to='/projects/amazombie'>
-                        <Hide>
-                            <motion.img variants={imgAnim} src='http://via.placeholder.com/640x360' alt="hellolthere"></motion.img></Hide>
-                    </Link>
-                </SepProjects>
-                <SepProjects>
-                    <motion.h2 variants={fade}>MockBuster</motion.h2>
-                    <motion.div variants={projectLine} className="line"></motion.div>
-                    <Link to='/projects/mockBuster'>
-                        <Hide>
-                            <motion.img variants={imgAnim} src='http://via.placeholder.com/640x360' alt="hellolthere"></motion.img>
-                        </Hide>
-                    </Link>
-                </SepProjects>
+                        </SepProjects>
+                    </ToggleProject>
+                    <ToggleProject title="Trump Scandle Game" img={trumpgame}>
+                        <SepProjects>
+                            <motion.h3>This is my game I made about Trumps time at the whitehouse</motion.h3>
+                            <ul>
+                                <li>Unity C#</li>
+                            </ul>
 
+                        </SepProjects>
+                    </ToggleProject>
+                    <ToggleProject title="Amazombie" img={amazombie}>
+                        <SepProjects>
+                            <motion.h3>Group class project for Zombie Subscription Boxes</motion.h3>
+                            <ul>
+                                <li>Javascript</li>
+                                <li>Sass</li>
+                            </ul>
+
+                        </SepProjects>
+                    </ToggleProject>
+                </AnimateSharedLayout>
 
             </Project>
         </motion.div>
@@ -67,18 +75,18 @@ padding-bottom: 10rem;
     margin-bottom: 3rem;
 }
 
-img {
-    width: 100%;
-    height: 50vh;
-    object-fit: cover;
+h3 {
+    text-align: center;
+}
+
+ul {
+    text-align: center;
+    list-style-position: inside;
 }
 
 `
 
-const Hide = styled.div`
-overflow: hidden;
 
-`
 
 
 
