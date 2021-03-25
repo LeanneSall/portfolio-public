@@ -1,0 +1,41 @@
+{
+  "files": {
+    "main.js": "/static/js/main.62535301.chunk.js",
+    "main.js.map": "/static/js/main.62535301.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.11cffa19.js",
+    "runtime-main.js.map": "/static/js/runtime-main.11cffa19.js.map",
+    "static/css/2.0781be91.chunk.css": "/static/css/2.0781be91.chunk.css",
+    "static/js/2.3d8b881c.chunk.js": "/static/js/2.3d8b881c.chunk.js",
+    "static/js/2.3d8b881c.chunk.js.map": "/static/js/2.3d8b881c.chunk.js.map",
+    "static/js/3.192a7c0d.chunk.js": "/static/js/3.192a7c0d.chunk.js",
+    "static/js/3.192a7c0d.chunk.js.map": "/static/js/3.192a7c0d.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.0781be91.chunk.css.map": "/static/css/2.0781be91.chunk.css.map",
+    "static/js/2.3d8b881c.chunk.js.LICENSE.txt": "/static/js/2.3d8b881c.chunk.js.LICENSE.txt",
+    "static/media/DirtBike.589fed00.jpg": "/static/media/DirtBike.589fed00.jpg",
+    "static/media/Explore.0def4db8.jpg": "/static/media/Explore.0def4db8.jpg",
+    "static/media/Leanne.e564b293.png": "/static/media/Leanne.e564b293.png",
+    "static/media/MGB.c8e0ca96.jpg": "/static/media/MGB.c8e0ca96.jpg",
+    "static/media/Piano.0d488a40.jpg": "/static/media/Piano.0d488a40.jpg",
+    "static/media/Pokedex.20c4eb2a.png": "/static/media/Pokedex.20c4eb2a.png",
+    "static/media/Whisk.b6112446.png": "/static/media/Whisk.b6112446.png",
+    "static/media/amazombie.557baa98.png": "/static/media/amazombie.557baa98.png",
+    "static/media/cat.e4b5fcbb.jpg": "/static/media/cat.e4b5fcbb.jpg",
+    "static/media/cutedog.f4891be8.jpg": "/static/media/cutedog.f4891be8.jpg",
+    "static/media/dogandcat.cf5ecdd0.jpg": "/static/media/dogandcat.cf5ecdd0.jpg",
+    "static/media/dogincoat.adcdecff.jpg": "/static/media/dogincoat.adcdecff.jpg",
+    "static/media/guitar.54f73959.jpg": "/static/media/guitar.54f73959.jpg",
+    "static/media/motorcycle.012d5b8a.jpg": "/static/media/motorcycle.012d5b8a.jpg",
+    "static/media/music.acde19e5.jpg": "/static/media/music.acde19e5.jpg",
+    "static/media/potatocat.68626387.jpg": "/static/media/potatocat.68626387.jpg",
+    "static/media/print.f9527630.jpg": "/static/media/print.f9527630.jpg",
+    "static/media/reading.4cfb10b2.jpg": "/static/media/reading.4cfb10b2.jpg",
+    "static/media/index.css": "/static/media/sanchez-latin-ext-400-normal.a28016d0.woff2"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.11cffa19.js",
+    "static/css/2.0781be91.chunk.css",
+    "static/js/2.3d8b881c.chunk.js",
+    "static/js/main.62535301.chunk.js"
+  ]
+}
