@@ -1,15 +1,18 @@
 import React from 'react'
-import { HelloTitle, Title, Hide, Image } from '../Styles/AboutStyles'
-import { motion, MotionConfig } from 'framer-motion'
+import { HelloTitle, Title, Hide, Image, Wrapper } from '../Styles/HomeStyles'
+import { motion } from 'framer-motion'
 import { titleAnim, imgAnim } from '../animation'
 import Line from './Line'
+import Leanne from '../img/Leanne.png'
+
 
 
 const HeaderFrontPage = () => {
 
     return (
         <HelloTitle>
-            <motion.div >
+
+            <Wrapper>
                 <Title>
                     <Hide>
                         <motion.h2 variants={titleAnim}>Hi there,</motion.h2>
@@ -27,14 +30,13 @@ const HeaderFrontPage = () => {
 
                 </Title>
 
-            </motion.div>
+                <Image>
+                    <motion.img variants={imgAnim} src={Leanne} alt="Leanne's photo"></motion.img>
+                </Image>
+                <Line />
+            </Wrapper>
 
-            <Image>
-                <motion.img variants={imgAnim} src="http://via.placeholder.com/640x360
-"></motion.img>
-            </Image>
 
-            <Line />
 
         </HelloTitle>
 

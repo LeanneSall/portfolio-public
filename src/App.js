@@ -1,18 +1,19 @@
-import React, { useState } from 'react'
+import React from 'react'
 import GlobalStyle from './components/GlobalStyle'
-import Nav from './components/NavComponent'
+
 
 //Pages
-import AboutUs from './pages/About'
+import Home from './pages/Home'
 import Contact from './pages/Contact'
-import Hobbies from './pages/Hobbies'
 import Projects from './pages/Projects'
-import ProjectDetail from './pages/ProjectDetail'
+import Hobbies from './pages/Hobbies'
+
 //Router
 import { Switch, Route, useLocation } from 'react-router-dom'
 
 //Animation
 import { AnimatePresence } from "framer-motion"
+import About from './pages/About'
 
 function App() {
   const location = useLocation();
@@ -22,19 +23,18 @@ function App() {
     <div>
 
       <GlobalStyle />
-
       <AnimatePresence exitBeforeEnter>
         <Switch location={location} key={location.pathname}>
           <Route path='/' exact>
-            <AboutUs />
+            <Home />
+          </Route>
+          <Route path='/about' exact>
+            <About />
           </Route>
           <Route path='/projects' exact>
             <Projects />
           </Route>
-          <Route path='/projects/:id'>
-            <ProjectDetail />
-          </Route>
-          <Route path='/hobbies'>
+          <Route path='/hobbies' exact>
             <Hobbies />
           </Route>
           <Route path='/contact'>
