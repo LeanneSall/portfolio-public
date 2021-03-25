@@ -10,6 +10,14 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
 }
 
+
+html {
+    @media (max-width: 1700px){
+        font-size: 75%;
+        overflow-x: hidden;
+    }
+}
+
 body {
     
     color: white;

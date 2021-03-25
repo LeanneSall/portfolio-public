@@ -6,6 +6,7 @@ import GlobalStyle from './components/GlobalStyle'
 import Home from './pages/Home'
 import Contact from './pages/Contact'
 import Projects from './pages/Projects'
+import Hobbies from './pages/Hobbies'
 
 //Router
 import { Switch, Route, useLocation } from 'react-router-dom'
@@ -22,7 +23,6 @@ function App() {
     <div>
 
       <GlobalStyle />
-
       <AnimatePresence exitBeforeEnter>
         <Switch location={location} key={location.pathname}>
           <Route path='/' exact>
@@ -33,6 +33,9 @@ function App() {
           </Route>
           <Route path='/projects' exact>
             <Projects />
+          </Route>
+          <Route path='/hobbies' exact>
+            <Hobbies />
           </Route>
           <Route path='/contact'>
             <Contact />

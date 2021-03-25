@@ -31,7 +31,9 @@ const Home = () => {
 
 const HomePage = styled(motion.div)`
 background-color: #1A1A1A;
-
+@media (max-width: 1300px){
+        text-align: center;
+    }
 
 `
 

@@ -5,6 +5,12 @@ import { AnimateSharedLayout } from 'framer-motion'
 import { motion } from 'framer-motion'
 import { fade } from '../animation';
 
+import cutedog from '../img/cutedog.jpg'
+import dogincoat from '../img/dogincoat.jpg'
+import dogandcat from '../img/dogandcat.jpg'
+import potatocat from '../img/potatocat.jpg'
+import cat from '../img/cat.jpg'
+
 
 const FaqSection = () => {
 
@@ -18,19 +24,27 @@ const FaqSection = () => {
             <AnimateSharedLayout>
                 <Toggle title='Why Hire Me?'>
                     <div className="answer">
-                        <p>Cause I am nice and stuff I think sometimes</p>
+                        <p>I love learning, working with others and solving probelms. I believe these skills make me a good programmer and someone who would be a great addition to any team! Also I have a really cute cat and dog </p>
                     </div>
 
                 </Toggle>
-                <Toggle title='What do you specialize in?'>
+                <Toggle title='Did you say you had a cat and a dog?'>
                     <div className="answer">
-                        <p>I specialize in full stack javascript with React</p>
+                        <p>Why yes I do! Pictured below is my dog Winnie who is a 2 year old rescue and my 1-1/2 year old cat Skully</p>
+                        <ImgWrapper>
+                            <Image src={cat} />
+                            <Image src={dogincoat} />
+                            <Image src={dogandcat} />
+                            <Image src={potatocat} />
+                            <Image src={cutedog} />
+
+                        </ImgWrapper>
                     </div>
 
                 </Toggle>
                 <Toggle title='What do you do in your spare time?'>
                     <div className="answer">
-                        <p>A lot of things</p>
+                        <p>I'm always doing something whether is coding or some of my hobbies! You can check out my various hobbies on my <a style={{ textDecoration: "none", color: "white" }} href="/hobbies">hobby page</a>!</p>
                     </div>
 
                 </Toggle>
@@ -40,16 +54,34 @@ const FaqSection = () => {
     )
 }
 
+const ImgWrapper = styled(motion.div)`
+display: flex;
+flex-wrap: wrap;
+justify-content: space-evenly;
+
+
+`
+
+const Image = styled(motion.img)`
+    height: 20rem;
+    width: 20rem;
+    margin-top: 2rem;
+    object-fit: cover;
+`
+
 const FAQ = styled(motion.div)`
+z-index: 1;
 min-height: 70vh;
-    display: block;
-    align-items: center;
+display: flex;
+    flex-direction: column;
+    align-items: left;
     justify-content: space-between;
     padding: 5rem 10rem;
     margin-top: 8rem;
     h2 {
         padding-bottom: 2rem;
         font-weight: lighter;
+        margin-top: 2rem;
     }
 
     h3 {
@@ -80,4 +112,4 @@ min-height: 70vh;
 
 `
 
-export default FaqSection 
+export default FaqSection

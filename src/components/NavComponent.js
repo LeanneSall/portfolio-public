@@ -12,6 +12,7 @@ const Nav = () => {
             <ul>
                 <li><Link to='/about'>About</Link></li>
                 <li><Link to='/projects'>Projects</Link></li>
+                <li><Link to='/hobbies'>Hobbies</Link></li>
                 <li><Link to='/contact'>Contact</Link></li>
             </ul>
 
@@ -44,6 +45,19 @@ li {
     font-size: 1.4em;
     position: relative;
 }
+
+@media (max-width: 1300px){
+        flex-direction: column;
+        padding: 2rem 0rem;
+        ul {
+            padding: 2rem;
+            justify-content: space-around;
+            width: 100%;
+            li {
+                padding: 0;
+            }
+        }
+    }
 
 
 `
